@@ -5,7 +5,7 @@
 3. All logic has been kept under productfeed package so that it would be easier to refer a specific feature.
 4. JAXB maven plugin is used to generate Java classes from the provided xsd schema. Generated java code is kept directly under default maven package structure.
 5. DB related configuration properties are kept in application.properties file
-6. I have also used Lombok to take care of boilerplate code.
+6. Lombok is used to take care of boilerplate code.
 7. Apache common lang3 is added to provide additional util methods.
 8. H2 Db is used for testing.
 9. Jackson is used for object mapping and Jakarta is used for javax based binding functionalities.
@@ -13,9 +13,9 @@
 
 # product-feed High level overview of codebase
 1. I have built the requested service using JAXb as This is what I have previously used.
-2. I have used 3 layer architecture pattern here to build the service.
+2. Layered architecture pattern here to build the service.
 3. File upload code is written in scalable way to support other type of file uploads if needed in the future.
-4. I have used Spring boot data JPA along with mysql to support DB related tasks.
+4. Spring boot data JPA is used along with mysql to support DB related tasks.
 5. Exception handling is taken care using Spring controller advice
 7. Junits are added for all classes except DTO and entities.
 
