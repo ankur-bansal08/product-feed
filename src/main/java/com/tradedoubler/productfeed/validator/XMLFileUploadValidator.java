@@ -44,9 +44,7 @@ public class XMLFileUploadValidator implements FileUploadValidator {
     }
 
     private static Result unMarshalResult(MultipartFile file) throws JAXBException, IOException {
-        //String xmlContent = new String(file.getBytes());
         JAXBContext jaxbContext = JAXBContext.newInstance(Result.class);
-        //try (StringReader stringReader = new StringReader(xmlContent)) {
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
         return (Result) unmarshaller.unmarshal(file.getInputStream());
     }

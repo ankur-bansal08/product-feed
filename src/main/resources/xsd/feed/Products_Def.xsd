@@ -31,7 +31,7 @@
                     <xs:element name="offers">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="offer">
+                          <xs:element maxOccurs="unbounded" name="offer">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element ref="ns2:feedId" />
