@@ -12,6 +12,7 @@
 	<artifactId>productfeed</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>product-feed</name>
+	<packaging>jar</packaging>
 	<description>Assignment</description>
 	<properties>
 		<java.version>17</java.version>
@@ -54,12 +55,6 @@
 			<artifactId>mysql-connector-j</artifactId>
 		</dependency>
 
-		<!--XmlMapper -->
-		<dependency>
-			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
-			<version>2.15.2</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -82,7 +77,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>jaxb2-maven-plugin</artifactId>
 				<version>3.1.0</version>
@@ -104,7 +99,7 @@
 					<outputDirectory>${basedir}/src/main/java/</outputDirectory>
 					<clearOutputDir>false</clearOutputDir>
 				</configuration>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
 
